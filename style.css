@@ -1,0 +1,57 @@
+/* Styl przycisku otwierającego menu */
+.menu-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Overlay menu - początkowo ukryte */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none; /* Menu jest początkowo ukryte */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Zawartość menu */
+.menu-content {
+    color: white;
+    text-align: center;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-content ul li {
+    margin: 20px 0;
+}
+
+.menu-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Przycisk zamknięcia (X) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
